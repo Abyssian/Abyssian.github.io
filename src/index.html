@@ -47,8 +47,8 @@
         
         <img src="img/about_me_photo.png" alt="Изображение начинающего веб-разработчика">
         <br>
-        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam odit in, ipsa temporibus unde vero, magni eveniet delectus, blanditiis at minima.</span>
-        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit tempora earum facere quod, esse natus corporis totam, fugiat fugit molestiae, cupiditate aperiam.</span>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam odit in, ipsa temporibus unde vero, magni eveniet delectus, blanditiis at minima.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit tempora earum facere quod, esse natus corporis totam, fugiat fugit molestiae, cupiditate aperiam.</p>
         <br>
         <a href="">Скачать резюме </a>
         </div>
@@ -90,7 +90,7 @@
         <h2>Кейсы</h2>
         <p>Lorem ipsum dolor sit.</p>
         
-        <div class="keys_item"> 
+        <div class="keys_img"> 
             <img src="img/primercasetest.png" alt="Изображение кейса" >
         </div>
         
@@ -102,36 +102,42 @@
             <p>https://www.kakaya-to.kompaniya.com</p>
             
             <form action="https://www.kakaya-to.kompaniya.com">
-            <button type="submit">Visit site</button>
+            <button type="submit">Visit live site</button>
             </form> 
         </div>
         
-        <div class="keys_item"> 
+        <div class="keys_item1"> 
             <h4> Название проекта </h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi odit sapiente cupiditate, deleniti nemo perferendis at?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores voluptatem molestiae ab! Veritatis eos, doloribus beatae neque reiciendis. Perspiciatis praesentium, ipsa esse nisi magni distinctio nemo ex, inventore quod nihil vero iure!</p>
         </div>
+        <div class="clear"></div>
     </div>
     
     <div class="calculating">
+        <div class="calculating_container">
         <h2>Расчёт стоимости</h2>
         <p>ТИП САЙТА</p>
-        <select name="list1" id="list" multiple>
-            <option value="Opt1">Option 1</option>
-            <option value="Opt2">Option 2</option>
-            <option value="Opt3">Option 3</option>    
+        <select class="myselect" name="list1" id="typeSite">
+            <option value="1" selected disabled>Выберите пункт</option>
+            <option value="2">Сайт-визитка</option>
+            <option value="3">Корпоративный сайт</option>
+            <option value="4">Интернет-магазин</option>    
         </select>
         <p>ДИЗАЙН</p>
-        <select name="list2" id="list" multiple>
-            <option value="Opt1">Option 1</option>
-            <option value="Opt2">Option 2</option>
-            <option value="Opt3">Option 3</option> 
+        <select class="myselect" name="list" id="typeSite">
+            <option value="1" selected disabled>Выберите пункт</option>
+            <option value="3">Шаблонный</option>
+            <option value="3">Уникальный</option>
+            <option value="4">WOW-Дизайн</option> 
         </select>
         <p>АДАПТИВНОСТЬ</p>
-        <select name="list3" id="list" multiple>
-            <option value="Opt1">Option 1</option>
-            <option value="Opt2">Option 2</option>
-            <option value="Opt3">Option 3</option>
-        </select>     
+        <select class="myselect" name="list" id="typeSite">
+            <option value="1" selected disabled>Выберите пункт</option>
+            <option value="2">Только ПК</option>
+            <option value="3">Только мобильный сайт</option>
+            <option value="4">ПК + Мобильный</option>
+        </select> 
+        </div>    
     </div>
     
     <div class="statistics">
@@ -161,7 +167,8 @@
     </div>
     
     <div class="reviews">
-       <h4>Отзывы</h4>
+       <h2>Отзывы</h2>
+       <img src="img/review_pic.png" alt="Изображение" >
        <span>Lorem ipsum dolor sit amet, consectetur.</span>
        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam!</span>
        <p><b>Некто</b>, заказчик</p>
@@ -187,15 +194,18 @@
             <p>Телефон</p>
         </div> 
         
-        <h2><p>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</p></h2>
+        <h3><p>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</p></h3>
             <form action="#">
-                <input type="text" name="text_input" value="Имя">
+                <input class="my_contacts_write_here" type="text" name="text_input" value="Имя">
             </form>
             <form action="#">
-                <input type="text" name="text_input" value="Email">
+                <input class="my_contacts_write_here" type="text" name="text_input" value="Email">
             </form> <br>
             <form action="#">
                 <textarea>Сообщение</textarea>
+            </form><br>
+            <form action="#">
+                <input class="my_contacts_to" type="submit" value="Отправить">    
             </form>
     </div> 
 </footer>    
