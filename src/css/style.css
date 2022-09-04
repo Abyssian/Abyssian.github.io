@@ -135,9 +135,9 @@ nav{
     background: url(../img/bg_skills.jpg) center/cover no-repeat;
 }
 
-    .skills_container h2{
+    .skills h2{
         font-size: 24px;
-        margin: 100px auto;
+        margin: 40px auto;
         margin-bottom: 22px;
         font-weight: bold;
         text-transform: uppercase;
@@ -145,7 +145,7 @@ nav{
         width: 220px;
     }
 
-    .skills_container hr{
+    .skills hr{
         height: 4px;
         border: none;
         background: orange;
@@ -154,15 +154,16 @@ nav{
     }
 
     .skills_container{
-        width: 920px;
+        width: 900px;
         margin: 0 auto;
     }
 
     .skills_item{
         float: left;
-        width: 230px;
+        width: 220px;
         text-align: center;
-        padding-right: 60px;
+        padding-left: 30px;
+        padding-right: 30px;
         font-size: 16px;
 
     }
@@ -283,7 +284,7 @@ nav{
         margin: 0 auto;
         margin-bottom: 22px;
         font-weight: bold;
-        text-align: justify;
+        text-align: center;
         text-transform: uppercase;
         color: #263244;
         width: 300px;
@@ -370,7 +371,7 @@ nav{
 .statistics_item{
     float: left;
     width: 220px;
-    margin-left: 190px;
+    margin-left: 203px;
     font-size: 16px;
 }
 
@@ -475,11 +476,18 @@ nav{
         color: #fff;
         padding-bottom: 40px;
     }
+    
+    .my_contacts_info{
+        float: center;
+        height: 81px;
+        width: 700px;
+        margin: 0 auto;
+    }
 
     .my_contacts_item{
         float: left;
         width: 80px;
-        margin: 0 auto auto 450px;
+        margin: 0 auto auto 110px;
 
         font-size: 16px;
         padding-bottom: 15px;
@@ -497,7 +505,7 @@ nav{
     
     .my_contacts_write_here{
         float: left;
-        margin:0 auto auto 595px;
+        margin:0 auto auto 615px;
         text-align: justify;
         width: 311px;
         height: 40px;
@@ -523,7 +531,7 @@ nav{
 
     .my_contacts textarea{
         float: left;
-        margin:15px 0px 0px 595px; 
+        margin:15px 0px 0px 615px; 
         text-align: justify;
         width: 657px;
         height: 80px;
@@ -535,7 +543,7 @@ nav{
     .my_contacts_to{
         clear: both;
         float: left;
-        margin:25px 0px 0px 860px;
+        margin:25px 0px 0px 880px;
         height: 40px;
         width: 120px;
         text-align: center;
