@@ -67,23 +67,39 @@ nav{
 
 .about_me{
     float: left;
-    margin: 52px 0px 0px  475px;
+    margin: 52px 0px 0px  590px;
     background: color#fff;
     text-align: center;
-    height: 450px;
+    height: 580px;
     width: auto;
 }
+
+    .about_me_container{
+        width: 740px;
+        margin: 0 auto;
+    }
+    
+    .about_me_container{
+        display: block;
+        margin: 0 auto;
+    }    
 
     .about_me_container h2{
         font-size: 24px;
         margin: 0 auto;
-        margin-bottom: 42px;
+        margin-bottom: 22px;
         font-weight: bold;
         text-transform: uppercase;
         color: #263244;
         width: 120px;
-        border-bottom: 4px solid orange;
-        padding-bottom: 25px; 
+    }
+
+    .about_me_container hr{
+        height: 4px;
+        border: none;
+        background: orange;
+        width: 60px;
+        margin: 0 auto 55px auto;
     }
 
     .about_me_container img{
@@ -105,42 +121,53 @@ nav{
         color: #6d7682;
         font-size: 18px;
         padding: 6px;
-        margin: 58px 14px 0px 14px; 
-
+        margin: 58px 14px 0px 14px;      
     }
 
 .skills{
     width: 100%;
     height: calc(100% - 1793px);
     float: left;
-    margin: 105px 0px 0px  0px;
+    margin: 0 auto 55px auto;
     background: color#fff;
     text-align: center;
-    height: 520px;
+    height: 540px;
     background: url(../img/bg_skills.jpg) center/cover no-repeat;
 }
 
-    .skills h2{
+    .skills_container h2{
         font-size: 24px;
-        margin: 0 auto;
-        margin-bottom: 103px;
+        margin: 100px auto;
+        margin-bottom: 22px;
         font-weight: bold;
         text-transform: uppercase;
         color: #263244;
-        width: 180px;
-        border-bottom: 4px solid orange;
-        padding-top: 55px;
-        padding-bottom: 25px; 
+        width: 220px;
+    }
+
+    .skills_container hr{
+        height: 4px;
+        border: none;
+        background: orange;
+        width: 60px;
+        margin: 0 auto 105px auto;
+    }
+
+    .skills_container{
+        width: 920px;
+        margin: 0 auto;
     }
 
     .skills_item{
         float: left;
-        width: 300px;
-        margin-right: -200px;
-        margin-left: 250px;
+        width: 230px;
+        text-align: center;
+        padding-right: 60px;
         font-size: 16px;
 
     }
+
+
 
     .skills_item img{
         padding-bottom: 15px;
@@ -150,6 +177,10 @@ nav{
         font-weight: bold;
         color: orange;
         padding-bottom: 15px;
+    }
+
+    .clear{
+        clear: left;
     }
 
 .keys{
@@ -164,35 +195,41 @@ nav{
     .keys h2{
         font-size: 24px;
         margin: 0 auto;
-        margin-bottom: 50px;
+        margin-bottom: 22px;
         font-weight: bold;
         text-transform: uppercase;
         color: #263244;
-        width: 100px;
-        border-bottom: 4px solid orange;
-        padding-bottom: 25px; 
+        width: 100px; 
+    }
+
+    .keys hr{
+        height: 4px;
+        border: none;
+        background: orange;
+        width: 60px;
+        margin: 0 auto 105px auto;
     }
 
     .keys p{
         width: 730px auto;
         color: #3f495a;
         padding-bottom: 45px;
-
     }
 
     .keys_img{
+        float: left;
         height: 600px;
-        margin-left: -350px;
     }
 
 .keys_item{
     float: left;
     width: 300px;
-    font-size: 16px;
+    font-size: 15px;
     margin-left: 387px;
-    margin-right: -300px;
     text-align: justify;
 }
+
+
 
     .keys_item h4{
         color: #384354;
@@ -222,8 +259,6 @@ nav{
     float: left;
     width: 780px;
     font-size: 16px;
-    margin-left: 387px;
-    margin-right: -300px;
     text-align: justify;
     }
 
@@ -243,19 +278,38 @@ nav{
     height: 650px;
     width: 100%;
 }
-
         .calculating h2{
-            font-size: 24px;
-            margin: 0 auto;
-            margin-left: 400px;
-            margin-bottom: 20px;
-            font-weight: bold;
-            text-transform: uppercase;
-            text-align: center;
-            color: #263244;
-            width: 260px;
-            padding-bottom: 5px; 
-        }
+        font-size: 24px;
+        margin: 0 auto;
+        margin-bottom: 22px;
+        font-weight: bold;
+        text-align: justify;
+        text-transform: uppercase;
+        color: #263244;
+        width: 300px;
+    }
+
+    .calculating_container{
+        width: 920px;
+        margin: 0 auto;
+    }
+
+    .calculating_item{
+        float: left;
+        width: 230px;
+        text-align: center;
+        padding-right: 60px;
+        font-size: 16px;
+    }
+
+    .calculating_container p{
+        color: #384354;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: justify;
+        padding-top: 50px;
+        padding-bottom: 15px;
+    }
 
         .myselect{
             display: block;
@@ -264,21 +318,24 @@ nav{
             background: #eee;
         }
 
-        .calculating_container{
+    .calculate{
         float: left;
-        width: 300px;
-        font-size: 16px;
-        margin-left: 387px;
-        margin-right: -300px;
-        text-align: justify;
-        }
-        .calculating_container p{
-        color: #384354;
-        font-size: 22px;
-        font-weight: bold;
-        padding-top: 50px;
-        padding-bottom: 15px;
-        }
+        width: 890px;
+        margin: 25px auto;
+        border-top: 2px #eee solid ;
+    }
+    .calculated1{
+    float: left;
+    width: 878px;
+    font-size: 16px;
+    text-align: justify;
+    }
+
+    .clear{
+        clear: left;
+    }
+
+
 .statistics{
     float: left;
     margin: 52px 0px 0px  0px;
@@ -292,21 +349,28 @@ nav{
     .statistics h2{
         font-size: 24px;
         margin: 0 auto;
-        margin-bottom: 103px;
+        margin-bottom: 22px;
         font-weight: bold;
         text-transform: uppercase;
         color: #263244;
         width: 300px;
-        border-bottom: 4px solid orange;
         padding-top: 100px;
-        padding-bottom: 25px; 
     }
+
+    .statistics hr{
+        height: 4px;
+        border: none;
+        background: orange;
+        width: 60px;
+        margin: 0 auto 105px auto;
+    }
+
+
 
 .statistics_item{
     float: left;
     width: 220px;
-    margin-right: -100px;
-    margin-left: 230px;
+    margin-left: 190px;
     font-size: 16px;
 }
 
@@ -337,14 +401,20 @@ nav{
     .reviews h2{
         font-size: 24px;
         margin: 0 auto;
-        margin-bottom: 70px;
+        margin-bottom: 22px;
         font-weight: bold;
         text-transform: uppercase;
         color: #263244;
         width: 300px;
-        border-bottom: 4px solid orange;
         padding-top: 40px;
-        padding-bottom: 25px; 
+    }
+
+    .reviews hr{
+        height: 4px;
+        border: none;
+        background: orange;
+        width: 60px;
+        margin: 0 auto 105px auto;
     }
 
     .reviews img{
@@ -376,29 +446,40 @@ nav{
     height: 715px;
     width: 100%;
 }
-
+370
+    .my_contacts_container{
+    float: left;
+    width: 740px;
+    margin: 0 auto;
+    }
     .my_contacts h2{
         font-size: 24px;
         margin: 0 auto;
-        margin-bottom: 40px;
+        margin-bottom: 22px;
         font-weight: bold;
         text-transform: uppercase;
         color: #fff;
         width: 300px;
-        border-bottom: 4px solid orange;
         padding-top: 80px;
-        padding-bottom: 25px; 
+    }
+
+    .my_contacts hr{
+        height: 4px;
+        border: none;
+        background: orange;
+        width: 60px;
+        margin: 0 auto 40px auto;
     }
 
     .my_contacts p{
         color: #fff;
-        padding-bottom: 30px;
+        padding-bottom: 40px;
     }
 
     .my_contacts_item{
         float: left;
-        width: 250px;
-        margin: 0 -510px 0 530px;
+        width: 80px;
+        margin: 0 auto auto 450px;
 
         font-size: 16px;
         padding-bottom: 15px;
@@ -416,9 +497,22 @@ nav{
     
     .my_contacts_write_here{
         float: left;
-        margin:0px -585px 0px 595px;
+        margin:0 auto auto 595px;
         text-align: justify;
-        width: 17%;
+        width: 311px;
+        height: 40px;
+        color: #5d5d5e;
+        font-size: 18px;
+        padding: 6px;
+        padding-bottom: 15px; 
+        
+    }
+
+    .my_contacts_write_here1{
+        float: left;
+        margin:0 auto auto 35px;
+        text-align: justify;
+        width: 311px;
         height: 40px;
         color: #5d5d5e;
         font-size: 18px;
@@ -454,3 +548,17 @@ nav{
         
     }
 
+.map img{
+    width: 100%;
+    height: 356px;
+}
+
+.copyrights{
+    float: left;
+    width: 100%; 
+    height 95px;
+    background: #344051;
+    text-align: center;
+    color: #fff;
+    padding: 30px 0 30px 0;
+}
