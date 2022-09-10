@@ -14,32 +14,39 @@
 
 <body>
 
+    <div id="loader">
+        <img src="img/preload_jerry.gif" width="10%"/>
+    </div>
+
     <header>
 
         <nav> 
             <div class="logo">Владислав Абиссиан</div>
             <div class="menu"> <ul> 
-               <li>Обо мне</li>
-               <li>Услуги </li>
-               <li>Кейсы</li>
-               <li>Прайс </li>
-               <li>Отзывы </li>
-               <li>Контакты </li>
+               <li><a href="#">Обо мне</a></li>
+               <li><a href="#">Услуги </a></li>
+               <li><a href="#">Кейсы </a></li>
+               <li><a href="#">Прайс </a></li>
+               <li><a href="#">Отзывы </a></li>
+               <li><a href="#">Контакты </a></li>
             
             </ul></div>
         </nav>
     </header>
     
-    <div class="main"><div class="title_container">
-        
-        <h1>Привет <br>Я Владислав Абиссиан</h1>
-        
-        <h4>Фулл стек веб-разработчик</h4>
-        <input type="submit" value="Обо мне">    
-        <input type="submit" value="Мои работы">
+    <main>
+    <section class="main">
+        <div class="title_container">
 
-    </div>
-    </div>
+            <h1>Привет <br>Я Владислав Абиссиан</h1>
+            <h4>Фулл стек веб-разработчик</h4>
+            <input type="button" value="Обо мне">
+            <input type="button" value="Мои работы">
+
+        </div>
+    </section>
+
+    </main>
     
     <div class="about_me">
         <div class="about_me_container">
@@ -50,14 +57,15 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam odit in, ipsa temporibus unde vero, magni eveniet delectus, blanditiis at minima.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit tempora earum facere quod, esse natus corporis totam, fugiat fugit molestiae, cupiditate aperiam.</p>
         <br>
-        <a href="">Скачать резюме </a>
+        <button onclick="window.location.href = '';">Скачать резюме</button>
         </div>
         </div>
     
     <div class="skills">
+        
+        <div class="skills_container">
         <h2>Что я умею</h2>
         <hr>
-        <div class="skills_container">
         <div class="skills_item"> 
             <img src="img/skills_1.png" alt="Изображение" >
             <h4> Веб-дизайн </h4>
@@ -89,6 +97,7 @@
     </div>       
             
     <div class="keys">
+        <div class="keys_container">
         <br>
         <h2>Кейсы</h2>
         <hr>
@@ -113,6 +122,7 @@
         <div class="keys_item1"> 
             <h4> Название проекта </h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores voluptatem molestiae ab! Veritatis eos, doloribus beatae neque reiciendis. Perspiciatis praesentium, ipsa esse nisi magni distinctio nemo ex, inventore quod nihil vero iure!</p>
+        </div>
         </div>
     </div>
     
@@ -154,6 +164,7 @@
     </div>
     
     <div class="statistics">
+        <div class="statistics_container">
         <h2>Немного статистики</h2>
         <hr>
         <div class="statistics_item"> 
@@ -176,18 +187,18 @@
             <h4> 0 </h4>
             <p>НАГРАД ПОЛУЧЕНО</p>
         </div>          
-        
+        </div>
     </div>
     
     <div class="reviews">
+       <div class="reviews_container">
        <h2>Отзывы</h2>
        <hr>
        <img src="img/review_pic.png" alt="Изображение" >
        <span>Lorem ipsum dolor sit amet, consectetur.</span>
        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam!</span>
        <p><b>Некто</b>, заказчик</p>
-       
-        
+       </div>
     </div>
     
 <footer>
@@ -233,4 +244,15 @@
     </div>
 </footer>    
 </body>
+   
+    <script>
+      var preloader = document.getElementById('loader');
+      window.addEventListener("load", function(){
+        loader.style.height= "100px";  
+        loader.style.width= "100px"; 
+        loader.style.borderRadius= "50%";  
+        loader.style.visibility= "hidden";  
+      });
+    </script>
+
 </html>
