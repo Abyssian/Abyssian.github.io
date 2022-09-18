@@ -6,9 +6,12 @@
     <meta name="author" content="Vladislav">
     
     <meta property="og:title" content="Это моя первая страница">
-     
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Владислав Абиссиан - Веб-разработчик</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/my-fonts.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -17,100 +20,130 @@
     <div id="loader">
         <img src="img/preload_jerry.gif" width="10%"/>
     </div>
-
     <header>
-
-        <nav> 
-            <div class="logo">Владислав Абиссиан</div>
-            <div class="menu"> <ul> 
+        <nav>
+           <div class="container">
+               <div class="row">
+                   <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-5 sm-4 col-10"><div class="logo">Владислав Абиссиан</div></div>
+                   <div class="px-0 col-xxl-6 col-xl-7 offset-xxl-3 offset-xl-1 col-lg-8 d-none d-lg-block"><div class="menu"> <ul> 
                <li><a href="#">Обо мне</a></li>
                <li><a href="#">Услуги </a></li>
                <li><a href="#">Кейсы </a></li>
                <li><a href="#">Прайс </a></li>
                <li><a href="#">Отзывы </a></li>
                <li><a href="#">Контакты </a></li>
+            </ul>
+              </div></div>
+              <div class="col-2 col-sm-2 col-md-7 d-flex d-lg-none flex-column justify-content-center align-items-end">
+                  <div class="dropdown">
+  <a class="btn btn-outline-secondary dropdown-toggle white-btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+    Навигация
+  </a>
+
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <li><a class="dropdown-item" href="#">Обо мне</a></li>
+    <li><a class="dropdown-item" href="#">Услуги </a></li>
+    <li><a class="dropdown-item" href="#">Кейсы </a></li>
+    <li><a class="dropdown-item" href="#">Прайс </a></li>
+    <li><a class="dropdown-item" href="#">Отзывы </a></li>
+    <li><a class="dropdown-item" href="#">Контакты </a></li>
+  </ul>
+</div>
+              </div>
+               </div>
+           </div> 
             
-            </ul></div>
+
         </nav>
     </header>
     
     <main>
     <section class="main">
-        <div class="title_container">
-
+       <div class="container h-100"><div class="row align-items-center h-100"><div class="col-lg-6 mt-5 pt-5">        
+            <div class="title_container mt-5">
             <h1>Привет <br>Я Владислав Абиссиан</h1>
-            <h4>Фулл стек веб-разработчик</h4>
+            <h4><i class="fa fa-sitemap"></i>Фулл стек веб-разработчик</h4>
             <input type="button" value="Обо мне">
             <input type="button" value="Мои работы">
+       
+         </div>
+        </div></div></div>
 
-        </div>
     </section>
 
     </main>
     
-    <div class="about_me">
-        <div class="about_me_container">
-        <h2>Обо мне</h2>
-        <hr>
-        <img src="img/about_me_photo.png" alt="Изображение начинающего веб-разработчика">
-        <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam odit in, ipsa temporibus unde vero, magni eveniet delectus, blanditiis at minima.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit tempora earum facere quod, esse natus corporis totam, fugiat fugit molestiae, cupiditate aperiam.</p>
-        <br>
-        <button onclick="window.location.href = '';">Скачать резюме</button>
+    <section class="about_me">
+        <div class="about_me_container container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-6 col-md-3 text-center">
+                <h2>Обо мне</h2>
+                <hr> 
+            </div>
         </div>
+
+        <img class="d-block mx-auto" src="img/about_me_photo.png" alt="Изображение начинающего веб-разработчика">
+       <div class="row justify-content-center">
+            <div class="col-12 col-sm-10 col-md-9 col-lg-8 text-center text-md-start">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam odit in, ipsa temporibus unde vero, magni eveniet delectus, blanditiis at minima.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit tempora earum facere quod, esse natus corporis totam, fugiat fugit molestiae, cupiditate aperiam.</p>    
+          </div> 
+       </div>
+       <div class="row justify-content-center"><div class="col-6 col-sm-5 col-md-4 col-lg-2 text-center">
+        <button onclick="window.location.href = '';">Скачать резюме</button>   
+       </div></div> 
         </div>
-    
-    <div class="skills">
-        
-        <div class="skills_container">
+        </section>
+  
+      <section class="skills">
+        <div class="skills_container container">
         <h2>Что я умею</h2>
         <hr>
-        <div class="skills_item"> 
+        <div class="row justify-content-center text-center">
+        <div class="skills_item col-12 col-sm-6 col-md-6 col-lg-3 mt-5 mt-md-0"> 
             <img src="img/skills_1.png" alt="Изображение" >
             <h4> Веб-дизайн </h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         Ut nemo, soluta in nisi! Laborum, architecto mollitia possimus a, ut quibusdam.</p>
         </div>
              
-        <div class="skills_item"> 
+        <div class="skills_item col-12 col-sm-6 col-md-6 col-lg-3 mt-5 mt-md-0"> 
             <img src="img/skills_2.png" alt="Изображение" >
             <h4> Разработка </h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         Ut nemo, soluta in nisi! Laborum, architecto mollitia possimus a, ut quibusdam.</p>
         </div>
-        <div class="skills_item"> 
+        <div class="skills_item col-12 col-sm-6 col-md-6 col-lg-3 mt-5 mt-md-0"> 
             <img src="img/skills_3.png" alt="Изображение" >
             <h4> CEO-Оптимизация </h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         Ut nemo, soluta in nisi! Laborum, architecto mollitia possimus a, ut quibusdam.</p>
         </div>            
-        <div class="skills_item"> 
+        <div class="skills_item col-12 col-sm-6 col-md-6 col-lg-3 mt-5 mt-md-0"> 
             <img src="img/skills_4.png" alt="Изображение" >
             <h4> Маркетинг </h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         Ut nemo, soluta in nisi! Laborum, architecto mollitia possimus a, ut quibusdam.</p>
         </div> 
-        <div class="clear"></div>
         </div>                    
-          
-    </div>       
-            
-    <div class="keys">
-        <div class="keys_container">
-        <br>
+      </div>    
+    </section>       
+       
+    <section class="keys">
+        <div class="keys_container container">
         <h2>Кейсы</h2>
         <hr>
+        <div class="row justify-content-center">
+        <div class="col-12 col-sm-10 col-md-9 col-lg-8 text-center">
         <p>Lorem ipsum dolor sit.</p>
-        
-        <div class="keys_img"> 
-            <img src="img/primercasetest.png" alt="Изображение кейса" >
         </div>
-        
-        <div class="keys_item"> 
+           <div class="keys_img"> 
+            <img class="img-fluid d-block mx-auto" src="img/primercasetest.png" alt="Изображение кейса" >
+        </div>
+        <div class="row justify-content-left text-left"></div>
+        <div class="keys_item col-12 col-sm-3"> 
             <h4> Client: </h4>
             <p>Компания</p>
-            
             <h4> WEBSITE: </h4>
             <p>http://www.kompaniya.com</p>
             
@@ -118,17 +151,22 @@
             <button type="submit">Visit live site</button>
             </form> 
         </div>
-        
+        <div class="col-12 col-sm-7 offset-0 offset-sm-2 offset-xl-1">
         <div class="keys_item1"> 
             <h4> Название проекта </h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores voluptatem molestiae ab! Veritatis eos, doloribus beatae neque reiciendis. Perspiciatis praesentium, ipsa esse nisi magni distinctio nemo ex, inventore quod nihil vero iure!</p>
+        </div></div>
         </div>
         </div>
-    </div>
-    
-    <div class="calculating">
-        <div class="calculating_container">
+    </section>
+       
+    <section class="calculating">
+        <div class="calculating_container container border shadow-lg">
+        <div class="row justify-content-center">
         <h2>Расчёт стоимости</h2>
+        </div>
+        
+        <div class="calculator_inner col-10 col-md-9 justify-content-center text-left ">
         <p>ТИП САЙТА</p>
         <select class="myselect" name="list1" id="typeSite">
             <option value="1" selected disabled>Выберите пункт</option>
@@ -149,100 +187,127 @@
             <option value="2">Только ПК</option>
             <option value="3">Только мобильный сайт</option>
             <option value="4">ПК + Мобильный</option>
-        </select> 
-        <div class=calculate>
-            <div class="calculated1">
-                <p>Сроки</p>
-                <p>Стоимость</p>
+        </select>
+        </div> 
+  
+           <div class="calculator_footer_row row justify-content-center col-12">
+                    <div class="calculator_footer col-10 col-md-9 justify-content-center text-left ">
+                        <div class="days">
+                           <div class="row">
+                            <p class="text col-11 ">Сроки</p>
+                            <p class="digit col-1 text-right">0</p>
+                            </div>
+                        </div>
+                        
+                        <div class="price">
+                           <div class="row">
+                            <p class="text col-11 ">Стоимость</p>
+                            <p class="digit col-1">0</p>
+                          </div>
+                        </div>
+                    </div>
             </div>
-            <div class="calculated2">
-                <p>0</p>
-                <p>0</p>
-            </div> 
         </div>
-        </div>    
-    </div>
+    </section>
     
-    <div class="statistics">
-        <div class="statistics_container">
+    <section class="statistics">
+        <div class="statistics_container container">
         <h2>Немного статистики</h2>
         <hr>
-        <div class="statistics_item"> 
+        <div class="row justify-content-center text-center">
+        <div class="statistics_item col-12 col-sm-6 col-md-3 mt-5 mt-md-0"> 
             <img src="img/statistics_item_1.png" alt="Изображение" >
             <h4> 0 </h4>
             <p>СЧАСТЛИВЫХ КЛИЕНТОВ</p>
         </div>
-        <div class="statistics_item"> 
+        <div class="statistics_item col-12 col-sm-6 col-md-3 mt-5 mt-md-0"> 
             <img src="img/statistics_item_2.png" alt="Изображение" >
             <h4> 0 </h4>
             <p>ЧАСОВ РАБОТЫ</p>
         </div>            
-        <div class="statistics_item"> 
+        <div class="statistics_item col-12 col-sm-6 col-md-3 mt-5 mt-md-0"> 
             <img src="img/statistics_item_3.png" alt="Изображение" >
             <h4> 0 </h4>
             <p>ПРОЕКТОВ ЗАВЕРШЕНО</p>
         </div>                    
-         <div class="statistics_item"> 
+         <div class="statistics_item col-12 col-sm-6 col-md-3 mt-5 mt-md-0"> 
             <img src="img/statistics_item_4.png" alt="Изображение" >
             <h4> 0 </h4>
             <p>НАГРАД ПОЛУЧЕНО</p>
         </div>          
         </div>
-    </div>
+        </div>
+    </section>
     
-    <div class="reviews">
-       <div class="reviews_container">
-       <h2>Отзывы</h2>
-       <hr>
-       <img src="img/review_pic.png" alt="Изображение" >
-       <span>Lorem ipsum dolor sit amet, consectetur.</span>
-       <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam!</span>
-       <p><b>Некто</b>, заказчик</p>
-       </div>
-    </div>
-    
-<footer>
-    <div class="my_contacts">
-        <div class="my_contacts_container">
+    <section class="reviews">
+        <div class="reviews_container container">
+        <h2>Отзывы</h2>
+        <hr>
+        <div class="row justify-content-center text-center">
+        <img class="d-block mx-auto" src="img/review_pic.png" alt="Изображение" >
+        <span>Lorem ipsum dolor sit amet, consectetur.</span>
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam!</span>
+        <p><b>Некто</b>, заказчик</p>
+        </div>
+        </div>
+    </section>
+
+ <footer>
+    <section class="my_contacts">
+        <div class="my_contacts_container container text-center">
         <h2>Мои контакты</h2>
         <hr>
+        <div class="row justify-content-center">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         <div class="my_contacts_info">
-            <div class="my_contacts_item"> 
+           <div class="row justify-content-center text-center">
+            <div class="my_contacts_item col-3 col-md-2"> 
                 <img src="img/my_contacts_1.png" alt="Изображение" >
                 <p>Москва</p>
             </div>            
-            <div class="my_contacts_item"> 
+            <div class="my_contacts_item col-3 col-md-2"> 
                 <img src="img/my_contacts_2.png" alt="Изображение" >
                 <p>Почта</p>
             </div>                    
-             <div class="my_contacts_item"> 
+             <div class="my_contacts_item col-3 col-md-2"> 
                 <img src="img/my_contacts_3.png" alt="Изображение" >
                 <p>Телефон</p>
+                </div>
             </div>
-        </div> 
-        <h3><p>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</p></h3>
-            <form action="#">
-                <input class="my_contacts_write_here" type="text" name="text_input" value="Имя">
-            </form>
-            <form action="#">
-                <input class="my_contacts_write_here1" type="text" name="text_input" value="Email">
-            </form> <br>
-            <form action="#">
-                <textarea>Сообщение</textarea>
-            </form><br>
-            <form action="#">
-                <input class="my_contacts_to" type="submit" value="Отправить">    
-            </form>
+        <h3><p>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</p></h3>    
+               <div class="col-12">
+                  
+                   
+        <div class="my_contacts_texts row justify-content-center">
+        <div class="my_contacts_div_write col-5 offset-1 mb-4">
+      <input type="text" class="my_contacts_write_here justify-content-center form-control " placeholder="Имя">
+    </div>
+    <div class="my_contacts_div_write col-5  mb-4">
+      <input type="text" class="my_contacts_write_here  form-control" placeholder="Email">
+    </div>
+  
+
+       <div class="form-group col-10 ">      
+    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Сообщение" cols="30" rows="3"> 
+    </textarea>
+  </div>
+         </div>              
+        <div class="my_contacts_to col">
+     <input class="my_contacts_to_btn mx-auto" type="submit" value="Отправить">
+        </div>       
         </div>
-    </div> 
-    <div class="map">
-        <img src="img/map.png" alt="Изображение" >
+        </div>
+        </div>
+        </div>     
+    </section> 
+ <div class="map">
+        <img class="img-fluid d-block mx-auto" src="img/map.png" alt="Изображение" >
     </div>
     <div class="copyrights">
         <p>Copyright @ Владислав Абиссиан. Design my Web</p>
     </div>
-</footer>    
+</footer>
+<script src="js/bootstrap.bundle.min.js"></script>    
 </body>
    
     <script>

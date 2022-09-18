@@ -1,3 +1,11 @@
+@font-face {
+	font-family: 'FranklinGot';
+	src: url('..fonts/Franklin Gothic Medium.eot');
+	src: local('☺'), url('..fonts/ofont.ru_Franklin Gothic Medium.woff') format('woff'), url('..fonts/Franklin Gothic Medium.ttf') format('truetype'), url('..fonts/Franklin Gothic Medium.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 body{
     font-family: Arial, sans-serif;
 }
@@ -24,18 +32,23 @@ nav{
     height: 60px;
     background: #344051;
     position: fixed;
+    z-index: 10;
 }
 
 .logo{
     color: #fff;
-    font-size: 30px;
+    font-size: 28px;
     line-height: 60px;
-    padding-left: 280px;
     float: left;
     -webkit-animation: comming 2s ease;
     -o-animation: comming 2s ease;
     animation: comming 2s ease; 
 }
+
+    @media (max-width: 600px){
+        .logo{
+            font-size: 24px;
+        }}
 
     @keyframes comming{
         from{
@@ -64,7 +77,7 @@ main{
 
 .menu{
     float: left;
-    padding-left: 430px;
+
 }
 
     .menu li{
@@ -72,7 +85,7 @@ main{
         line-height: 60px;
         color: #fff;
         margin-right: 40px;
-        font-size: 16px;
+        font-size: 14px;
         text-transform: uppercase;
         -webkit-animation: topshift 0.4s ease forwards;
         -o-animation: topshift 0.4s ease forwards;
@@ -85,6 +98,7 @@ main{
             color: white;
             transform: scale(1);
             display: inline-block;
+            text-decoration: none;
         }
 
         .menu li a:visited{
@@ -114,6 +128,9 @@ main{
         .menu li:nth-child(6){
             animation-delay: 1.5s;
         }
+.white-btn:visited{
+    color: white;
+}
 
 .main{
     width: 100%;
@@ -123,16 +140,16 @@ main{
 
 .title_container{
     float: left;
-    margin: 432px 0px 0px  404px;
     color: #2c384a;
     text-align: center;
+    width: 100%;
     opacity: 0;
     -webkit-animation: title_move 1s ease forwards;
     -o-animation: title_move 1s ease forwards;
     animation: title_move 1s ease forwards;
     -webkit-animation-delay: 1.8s;
     -o-animation-delay: 1.8s;
-    animation-delay: 1.8s;
+    animation-delay: 1.8s; 
 }
 
     @keyframes title_move{
@@ -142,14 +159,16 @@ main{
         }
         to{
             opacity:  1;
-            margin-left: 404px;
+            margin-left: 0px;
         }
     }
 
     .title_container h1{
-        font-size: 60px;
-        font-weight: bold;
+        font-family: Arial, sans-serif;
+        font-size: 72px;
+        font-weight: 600;
     }
+
 
     .title_container h4{
         margin-top: 40px;
@@ -185,20 +204,45 @@ main{
             transform: scale(1.1);
         }
 
+    @media (max-width: 991px){
+        .title_container, .title_container h4, .title_container input{
+            color: white;
+            position: relative;
+            z-index: 3;
+        }
+        
+        .title_container input{
+            border: 2px solid #fff;
+        }
+        
+        .main{
+            position: relative;
+        }
+        
+        main:after{
+            content: "";
+            bottom: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+            position: absolute;
+            background: rgba(0,0,0,0.4)
+        }
+        .title_container h1{
+            font-size: 60px;
+        }
+    }    
+
+
 .about_me{
-    float: left;
-    margin: 52px 0px 0px  590px;
-    background: color#fff;
-    text-align: center;
-    height: 580px;
-    width: auto;
+    width: 100%;
     opacity: 0;
     -webkit-animation: about_me_move 1s ease forwards;
     -o-animation: about_me_move 1s ease forwards;
     animation: about_me_move 1s ease forwards;
     -webkit-animation-delay: 2s;
     -o-animation-delay: 2s;
-    animation-delay: 2s;
+    animation-delay: 2s; 
 }
 
     @keyframes about_me_move{
@@ -208,28 +252,21 @@ main{
         }
         to{
             opacity:  1;
-            margin-left: 590px;
+            margin-left: 0px;
         }
-    }
-
-    .about_me_container{
-        width: 740px;
-        margin: 0 auto;
     }
     
     .about_me_container{
-        display: block;
-        margin: 0 auto;
+        padding-bottom: 100px;
     }    
 
     .about_me_container h2{
         font-size: 24px;
-        margin: 0 auto;
-        margin-bottom: 22px;
-        font-weight: bold;
+        margin:110px 0 30px;
+        font-weight: 600;
         text-transform: uppercase;
         color: #263244;
-        width: 120px;
+
     }
 
     .about_me_container hr{
@@ -237,7 +274,8 @@ main{
         border: none;
         background: orange;
         width: 60px;
-        margin: 0 auto 55px auto;
+        margin: 0 auto 60px;
+        opacity: 1;
     }
 
     .about_me_container img{
@@ -248,18 +286,24 @@ main{
         text-align: justify;
         width: 730px auto;
         color: #3f495a;
-        padding-bottom: 40px;
+        padding-bottom: 35px;
+        font-size: 17px;
     }
+
+
     .about_me_container button{
-        height: 40px;
+        height: 33px;
         text-align: center;
-        border: 3px solid #6f707e;
+        border: 1px solid #6f707e;
         background: none;
-        border-radius: 5px;
+        border-radius: 8px;
         color: #6d7682;
-        font-size: 18px;
-        padding: 6px;
-        margin: 0px 14px 0px 14px;      
+        background: url(../img/input.png) 6%/auto no-repeat;
+        padding-left: 18px;
+        font-size: 16px;
+        width: 162px;
+      
+   
         transition: all 0.2s;
         transform: scale(1);
         }
@@ -277,24 +321,19 @@ main{
         }
 
 .skills{
-    width: 100%;
-    height: calc(100% - 1793px);
-    float: left;
-    margin: 0 auto 55px auto;
-    background: color#fff;
-    text-align: center;
-    height: 540px;
     background: url(../img/bg_skills.jpg) center/cover no-repeat;
     background-attachment: fixed;
 }
 .skills_container{ 
+    padding-top: 110px;
+    padding-bottom: 96px;
     opacity: 0;
     -webkit-animation: skills_move 1s ease forwards;
     -o-animation: skills_move 1s ease forwards;
     animation: skills_move 1s ease forwards;
     -webkit-animation-delay: 2s;
     -o-animation-delay: 2s;
-    animation-delay: 2s;
+    animation-delay: 2s; 
 }
 
     @keyframes skills_move{
@@ -304,18 +343,15 @@ main{
         }
         to{
             opacity:  1;
-            margin-left: 501.5px;
+            margin-left: auto;
         }
     }
 
-
-
-
     .skills h2{
+        text-align: center;
         font-size: 24px;
-        margin: 40px auto;
-        margin-bottom: 22px;
-        font-weight: bold;
+        margin: 0px auto 30px;
+        font-weight: 600;
         text-transform: uppercase;
         color: #263244;
         width: 220px;
@@ -326,56 +362,51 @@ main{
         border: none;
         background: orange;
         width: 60px;
-        margin: 0 auto 105px auto;
+        margin: 0 auto 65px auto;
+        opacity: 1;
     }
 
     .skills_container{
-        width: 900px;
-        margin: 0 auto;
+        padding-top: 110px;
+        padding-bottom: 96px;
     }
 
     .skills_item{
-        float: left;
-        width: 220px;
+   
         text-align: center;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 40px;
+        padding-right: 50px;
         font-size: 16px;
 
     }
 
-
-
     .skills_item img{
-        padding-bottom: 15px;
+        height: 45px;
+        padding-bottom: 20px;
     }
 
     .skills_item h4{
         font-weight: bold;
         color: orange;
-        padding-bottom: 15px;
+        margin-bottom: 20px;
     }
 
-    .clear{
-        clear: left;
+    .skills_item p{
+        padding-bottom: 40px;
     }
-
 .keys{
-    float: left;
-    margin: 52px 0px 0px  0px;
-    background: color#fff;
-    text-align: center;
-    height: 1100px;
     width: 100%;
 }
-.keys_container{ 
+.keys_container{
+    width: 100%
+    margin-left: 0px;
     opacity: 0;
     -webkit-animation: keys_move 1s ease forwards;
     -o-animation: keys_move 1s ease forwards;
     animation: keys_move 1s ease forwards;
     -webkit-animation-delay: 2s;
     -o-animation-delay: 2s;
-    animation-delay: 2s;
+    animation-delay: 2s;  
 }
 
     @keyframes keys_move{
@@ -385,18 +416,18 @@ main{
         }
         to{
             opacity:  1;
-            margin-left: 0px;
+            margin-left: auto;
         }
     }
 
     .keys h2{
+        text-align: center;
         font-size: 24px;
-        margin: 0 auto;
-        margin-bottom: 22px;
-        font-weight: bold;
+        margin: 80px auto 30px;
+        font-weight: 600;
         text-transform: uppercase;
         color: #263244;
-        width: 100px; 
+        width: 160px;
     }
 
     .keys hr{
@@ -404,29 +435,25 @@ main{
         border: none;
         background: orange;
         width: 60px;
-        margin: 0 auto 105px auto;
+        margin: 0 auto 65px auto;
+        opacity: 1;
     }
 
     .keys p{
-        width: 730px auto;
         color: #3f495a;
         padding-bottom: 45px;
     }
 
-    .keys_img{
-        float: left;
-        height: 600px;
+    .img-fluid.{
+        max-width: 100%; 
+        height: auto;
     }
 
 .keys_item{
-    float: left;
-    width: 300px;
+    padding-top: 40px;
     font-size: 15px;
-    margin-left: 387px;
-    text-align: justify;
+
 }
-
-
 
     .keys_item h4{
         color: #384354;
@@ -465,10 +492,8 @@ main{
     }
 
     .keys_item1{
-    float: left;
-    width: 780px;
+    padding-top: 40px;
     font-size: 16px;
-    text-align: justify;
     }
 
      .keys_item1 h4{
@@ -480,16 +505,13 @@ main{
 
 
 .calculating{
-    float: left;
     margin: 52px 0px 0px  0px;
-    background: color#fff;
-    text-align: center;
-    height: 650px;
     width: 100%;
+    padding-bottom: 40px;
 }
-
         .calculating h2{
-        font-size: 24px;
+        padding-top: 30px;
+        font-size: 26px;
         margin: 0 auto;
         margin-bottom: 22px;
         font-weight: bold;
@@ -500,15 +522,16 @@ main{
     }
 
     .calculating_container{
-        width: 920px;
+        width: 100%;
         margin: 0 auto;
+        padding-bottom: 40px;
         opacity: 0;
         -webkit-animation: calculating_move 1s ease forwards;
         -o-animation: calculating_move 1s ease forwards;
         animation: calculating_move 1s ease forwards;
         -webkit-animation-delay: 2s;
         -o-animation-delay: 2s;
-        animation-delay: 2s;
+        animation-delay: 2s; 
     }
 
         @keyframes calculating_move{
@@ -518,18 +541,9 @@ main{
             }
             to{
                 opacity:  1;
-                margin-left: 491.5px;
+                margin-left: auto;
             }
         }
-
-
-    .calculating_item{
-        float: left;
-        width: 230px;
-        text-align: center;
-        padding-right: 60px;
-        font-size: 16px;
-    }
 
     .calculating_container p{
         color: #384354;
@@ -540,9 +554,33 @@ main{
         padding-bottom: 15px;
     }
 
+    .calculator_inner{
+        margin: 0 auto;
+        padding-bottom: 50px;
+        border-bottom: 2px #eee solid 
+    }
+
+    .calculator_inner h3{
+        font-size: 29px;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+    }
+
+    .calculator_inner select{
+        margin-bottom: 15px;
+    }
+
+    .calculator_inner hr{
+        height: 2px;
+        border: none;
+        background: #eee;
+        width: 100%;
+        margin: 0 auto;
+    }
+
         .myselect{
             display: block;
-            width: 890px;
+            width: 100%;
             height: 54px;
             background: #eee;
             transition: all 0.2s;
@@ -559,43 +597,47 @@ main{
             transform: scale(1.01);
         }
 
-    .calculate{
-        float: left;
-        width: 890px;
-        margin: 25px auto;
-        border-top: 2px #eee solid ;
     }
-    .calculated1{
-    float: left;
-    width: 878px;
-    font-size: 16px;
-    text-align: justify;
+    .calculator_footer{
+         margin: 0 auto;
     }
 
-    .clear{
-        clear: left;
+    .calculator_footer_row{
+        padding-top: 25px;
     }
 
+
+    .days, .price{
+        font-size: 21px;
+    }
+
+    .calculator_footer .text{
+        margin-bottom: 0;
+        padding-top: 0px;
+    }
+
+    .calculator_footer .digit{
+        margin-bottom: 0;
+        padding: 0px;
+        font-size: 29px;
+        text-align: end;
+        
+    }
 
 .statistics{
-    float: left;
-    margin: 52px 0px 0px  0px;
-    background: color#fff;
-    text-align: center;
-    height: 520px;
-    width: 100%;
     background: url(../img/statistics_bg.jpg) center/cover no-repeat;
     background-attachment: fixed;
 }
 
     .statistics_container{
+        padding-bottom: 80px;
         opacity: 0;
         -webkit-animation: statistics_move 1s ease forwards;
         -o-animation: statistics_move 1s ease forwards;
         animation: statistics_move 1s ease forwards;
         -webkit-animation-delay: 2s;
         -o-animation-delay: 2s;
-        animation-delay: 2s;
+        animation-delay: 2s; 
     }
 
         @keyframes statistics_move{
@@ -605,13 +647,14 @@ main{
             }
             to{
                 opacity:  1;
-                margin-left: 0px;
+                margin-left: auto;
             }
         }
 
     .statistics h2{
         font-size: 24px;
         margin: 0 auto;
+        text-align: center;
         margin-bottom: 22px;
         font-weight: bold;
         text-transform: uppercase;
@@ -626,14 +669,12 @@ main{
         background: orange;
         width: 60px;
         margin: 0 auto 105px auto;
+        opacity: 1;
     }
 
 
 
 .statistics_item{
-    float: left;
-    width: 220px;
-    margin-left: 203px;
     font-size: 16px;
 }
 
@@ -642,32 +683,29 @@ main{
     }
 
     .statistics_item h4{
-        font-size: 28px;
-        font-weight: bold;
+        font-size: 32px;
+        font-weight: 700;
         color: #384354;
         padding-bottom: 15px;
     }
 
     .statistics_item p{
-
+        font-size: 18px;
+        font-weight: 500;
     }
 
 .reviews{
-    float: left;
-    margin: 52px 0px 0px  0px;
-    background: color#fff;
-    text-align: center;
-    height: 450px;
-    width: 100%;
+
 }
     .reviews_container{
+        padding-bottom: 40px;
         opacity: 0;
         -webkit-animation: reviews_move 1s ease forwards;
         -o-animation: reviews_move 1s ease forwards;
         animation: reviews_move 1s ease forwards;
         -webkit-animation-delay: 2s;
         -o-animation-delay: 2s;
-        animation-delay: 2s;
+        animation-delay: 2s;   
     }
 
         @keyframes reviews_move{
@@ -677,19 +715,20 @@ main{
             }
             to{
                 opacity:  1;
-                margin-left: 0px;
+                margin-left: auto;
             }
         }
 
     .reviews h2{
         font-size: 24px;
         margin: 0 auto;
+        text-align: center;
         margin-bottom: 22px;
         font-weight: bold;
         text-transform: uppercase;
         color: #263244;
         width: 300px;
-        padding-top: 40px;
+        padding-top: 100px;
     }
 
     .reviews hr{
@@ -697,24 +736,21 @@ main{
         border: none;
         background: orange;
         width: 60px;
-        margin: 0 auto 105px auto;
+        margin: 0 auto 70px auto;
+        opacity: 1;
     }
 
     .reviews img{
-        float: left;
-        margin-left: 900px;
         width: auto;
         padding-bottom: 25px;
     }
 
     .reviews span{
-        float: left;
         width: 100%;
         padding-bottom: 5px;
     }
 
     .reviews p{
-        float: left;
         margin-left:;
         width: 100%;
         padding-top: 25px; 
@@ -743,19 +779,11 @@ main{
         }
 
 .my_contacts{
-    float: left;
-    margin: 52px 0px 0px  0px;
     background: url(../img/my_contacts_bg.jpg) center/cover no-repeat;
     background-attachment: fixed;
-    text-align: center;
-    height: 715px;
-    width: 100%;
 }
-370
-    .my_contacts_container{
-    float: left;
-    width: 740px;
-    margin: 0 auto;
+
+    .my_contacts_container container{
     }
     .my_contacts h2{
         font-size: 24px;
@@ -773,7 +801,8 @@ main{
         border: none;
         background: orange;
         width: 60px;
-        margin: 0 auto 40px auto;
+        margin: 0 auto 70px auto;
+        opacity: 1;
     }
 
     .my_contacts p{
@@ -782,17 +811,10 @@ main{
     }
     
     .my_contacts_info{
-        float: center;
-        height: 81px;
-        width: 700px;
         margin: 0 auto;
     }
 
     .my_contacts_item{
-        float: left;
-        width: 80px;
-        margin: 0 auto auto 110px;
-
         font-size: 16px;
         padding-bottom: 15px;
     }
@@ -802,52 +824,51 @@ main{
     }
 
     .my_contacts h3{
-        float: left;
+        font-weight: 500;
         width: 100%;
-        font-size: 17px;
+        font-size: 20px;
     }
     
-    .my_contacts_write_here{
-        float: left;
-        margin:0 auto auto 615px;
-        text-align: justify;
-        width: 311px;
-        height: 40px;
-        color: #5d5d5e;
-        font-size: 18px;
-        padding: 6px;
-        padding-bottom: 15px; 
-        
     }
 
-    .my_contacts_write_here1{
-        float: left;
-        margin:0 auto auto 35px;
-        text-align: justify;
-        width: 311px;
-        height: 40px;
-        color: #5d5d5e;
-        font-size: 18px;
-        padding: 6px;
-        padding-bottom: 15px; 
-        
-    }
+.contacts_inputs input{
+    display: block;
+    width: 45%;
 
-    .my_contacts textarea{
-        float: left;
-        margin:15px 0px 0px 615px; 
-        text-align: justify;
-        width: 657px;
-        height: 80px;
-        color: #5d5d5e;
-        font-size: 18px;
-        padding-bottom: 15px;
-    }
+    height: 34px;
+    padding-left: 14px;
+    margin-bottom: 14px;
+    background: rgba(210, 214, 220, 0.93);
+    font-size: 16px;
+}
 
-    .my_contacts_to{
-        clear: both;
-        float: left;
-        margin:25px 0px 0px 880px;
+.contacts_inputs .secondInput{
+    
+}
+
+.contacts_container textarea{
+    display: block;
+    width: 100%;
+    resize: none;
+    padding-top: 10px;
+    padding-left: 15px;
+    background: rgba(220, 224, 230, 0.93);
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.my_contacts_div_write {
+    width: 370px;
+}
+.my_contacts_write_here{
+    width: 70%;
+}
+
+.my_contacts_to{
+    padding-bottom:80px;
+}
+    .my_contacts_to_btn{
+        display: block;
+        margin:25px 0px 0px 0px;
         height: 40px;
         width: 120px;
         text-align: center;
@@ -861,7 +882,7 @@ main{
         transform: scale(1);
         }
 
-        .my_contacts_to:hover{
+        .my_contacts_to_btn:hover{
             background: #fff;
             border-color: #344051;
             border-radius: 6px;
@@ -874,8 +895,6 @@ main{
         }
 
 .map img{
-    width: 100%;
-    height: 356px;
 }
 
 .copyrights{
