@@ -890,7 +890,7 @@ main{
             box-shadow: 0 0 10px rgba(0,0,0,0.5);
         }
 
-        .my_contacts_to:active{
+        .my_contacts_to_btn:active{
             transform: scale(1.1);
         }
 
