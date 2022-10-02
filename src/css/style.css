@@ -10,6 +10,22 @@ body{
     font-family: Arial, sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+:target{
+    scroll-margin-top: 70px;
+}
+
+.element-animation{
+    opacity: 0;
+}
+
+.element-animation.show-animation{
+    opacity: 1;
+    transition: opacity 1s;
+}
 
 #loader{
 	position: fixed;
@@ -101,6 +117,8 @@ main{
             text-decoration: none;
         }
 
+        
+
         .menu li a:visited{
             color: white;   
         }
@@ -111,6 +129,10 @@ main{
 
         .menu li a:active{
             transform: scale(1.1);
+        }
+
+        .menu li a.active{
+            color: #e88604;
         }
 
         .menu li:nth-child(2){
@@ -320,6 +342,38 @@ main{
             transform: scale(1.1);
         }
 
+.popup-fade:before {
+	content: '';
+	background: #000;
+	position: fixed; 
+	left: 0;
+	top: 0;
+	width: 100%; 
+	height: 100%;
+	opacity: 0.7;
+	z-index: 333;
+}
+ 
+.popup {
+	position: fixed;
+	top: 20%;
+	left: 50%;
+	padding: 20px;
+	width: 360px;
+	margin-left: -200px;	
+	background: #fff;
+	border: 1px solid orange;
+	border-radius: 4px; 
+	z-index: 333;
+	opacity: 1;	
+}
+.popup-close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+
 .skills{
     background: url(../img/bg_skills.jpg) center/cover no-repeat;
     background-attachment: fixed;
@@ -502,6 +556,57 @@ main{
         font-weight: bold;
         padding-bottom: 10px;
     }
+
+
+/* padding-bottom and top for image */
+.mfp-no-margins img.mfp-img {
+	padding: 0;
+}
+/* position of shadow behind the image */
+.mfp-no-margins .mfp-figure:after {
+	top: 0;
+	bottom: 0;
+}
+/* padding for main container */
+.mfp-no-margins .mfp-container {
+	padding: 0;
+}
+
+
+/* 
+
+for zoom animation 
+uncomment this part if you haven't added this code anywhere else
+
+*/
+/*
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+	opacity: 0;
+	-webkit-backface-visibility: hidden;
+	-webkit-transition: all 0.3s ease-out; 
+	-moz-transition: all 0.3s ease-out; 
+	-o-transition: all 0.3s ease-out; 
+	transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+		opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+		opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container, 
+.mfp-with-zoom.mfp-removing.mfp-bg {
+	opacity: 0;
+}
+*/
+
+
+
+
 
 
 .calculating{
@@ -756,6 +861,12 @@ main{
         padding-top: 25px; 
         padding-bottom: 25px;
     }
+    
+    .carousel {
+        height: 300px;
+    }
+
+
 
 .footer{   
     opacity: 0;

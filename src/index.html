@@ -10,6 +10,7 @@
     <title>Владислав Абиссиан - Веб-разработчик</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/my-fonts.css">
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/style.css">
@@ -17,6 +18,15 @@
 
 <body>
 
+           
+    <div class="popup-fade">
+        <div class="popup">
+            <a class="popup-close" href="">{X}</a>
+            <p>Успейте оформить вёрстку сайта со скидкой в 300р! Скидка работает только в течении 6 часов!</p>
+        </div>		
+    </div>
+        
+   
     <div id="loader">
         <img src="img/preload_jerry.gif" width="10%"/>
     </div>
@@ -26,12 +36,12 @@
                <div class="row">
                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-5 sm-4 col-10"><div class="logo">Владислав Абиссиан</div></div>
                    <div class="px-0 col-xxl-6 col-xl-7 offset-xxl-3 offset-xl-1 col-lg-8 d-none d-lg-block"><div class="menu"> <ul> 
-               <li><a href="#">Обо мне</a></li>
-               <li><a href="#">Услуги </a></li>
-               <li><a href="#">Кейсы </a></li>
-               <li><a href="#">Прайс </a></li>
-               <li><a href="#">Отзывы </a></li>
-               <li><a href="#">Контакты </a></li>
+               <li><a href="#about_me">Обо мне</a></li>
+               <li><a href="#skills">Услуги </a></li>
+               <li><a href="#keys">Кейсы </a></li>
+               <li><a href="#calculating">Прайс </a></li>
+               <li><a href="#reviews">Отзывы </a></li>
+               <li><a href="#contacts">Контакты </a></li>
             </ul>
               </div></div>
               <div class="col-2 col-sm-2 col-md-7 d-flex d-lg-none flex-column justify-content-center align-items-end">
@@ -41,12 +51,12 @@
   </a>
 
   <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    <li><a class="dropdown-item" href="#">Обо мне</a></li>
-    <li><a class="dropdown-item" href="#">Услуги </a></li>
-    <li><a class="dropdown-item" href="#">Кейсы </a></li>
-    <li><a class="dropdown-item" href="#">Прайс </a></li>
-    <li><a class="dropdown-item" href="#">Отзывы </a></li>
-    <li><a class="dropdown-item" href="#">Контакты </a></li>
+    <li><a class="dropdown-item" href="#about_me">Обо мне</a></li>
+    <li><a class="dropdown-item" href="#skills">Услуги </a></li>
+    <li><a class="dropdown-item" href="#keys">Кейсы </a></li>
+    <li><a class="dropdown-item" href="#calculating">Прайс </a></li>
+    <li><a class="dropdown-item" href="#reviews">Отзывы </a></li>
+    <li><a class="dropdown-item" href="#contacts">Контакты </a></li>
   </ul>
 </div>
               </div>
@@ -73,29 +83,30 @@
 
     </main>
     
-    <section class="about_me">
+    <section class="about_me section"  id="about_me">
         <div class="about_me_container container">
+            
         <div class="row justify-content-center">
-            <div class="col-12 col-sm-6 col-md-3 text-center">
+            <div class="element-animation col-12 col-sm-6 col-md-3 text-center">
                 <h2>Обо мне</h2>
                 <hr> 
             </div>
         </div>
 
-        <img class="d-block mx-auto" src="img/about_me_photo.png" alt="Изображение начинающего веб-разработчика">
+        <img class="element-animation d-block mx-auto" src="img/about_me_photo1.png" data-src="img/about_me_photo.png" alt="Изображение начинающего веб-разработчика">
        <div class="row justify-content-center">
             <div class="col-12 col-sm-10 col-md-9 col-lg-8 text-center text-md-start">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam odit in, ipsa temporibus unde vero, magni eveniet delectus, blanditiis at minima.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit tempora earum facere quod, esse natus corporis totam, fugiat fugit molestiae, cupiditate aperiam.</p>    
+                <p class="element-animation">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam odit in, ipsa temporibus unde vero, magni eveniet delectus, blanditiis at minima.</p>
+                <p class="element-animation">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit tempora earum facere quod, esse natus corporis totam, fugiat fugit molestiae, cupiditate aperiam.</p>    
           </div> 
        </div>
        <div class="row justify-content-center"><div class="col-6 col-sm-5 col-md-4 col-lg-2 text-center">
-        <button onclick="window.location.href = '';">Скачать резюме</button>   
+        <button class="element-animation" onclick="window.location.href = '';">Скачать резюме</button>   
        </div></div> 
         </div>
         </section>
   
-      <section class="skills">
+      <section class="skills section" id="skills">
         <div class="skills_container container">
         <h2>Что я умею</h2>
         <hr>
@@ -129,7 +140,7 @@
       </div>    
     </section>       
        
-    <section class="keys">
+    <section class="keys section" id="keys">
         <div class="keys_container container">
         <h2>Кейсы</h2>
         <hr>
@@ -137,11 +148,22 @@
         <div class="col-12 col-sm-10 col-md-9 col-lg-8 text-center">
         <p>Lorem ipsum dolor sit.</p>
         </div>
-           <div class="keys_img"> 
-            <img class="img-fluid d-block mx-auto" src="img/primercasetest.png" alt="Изображение кейса" >
+          
+         <div id="carouselExampleIndicators" class="carousel slide w-100 h-auto" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <div class="keys_img">
+            <a class="image-popup-no-margins" href="img/primercasetest.png">
+	            <img src="img/primercasetest.png" img class="img-fluid d-block mx-auto" >
+            </a>
         </div>
-        <div class="row justify-content-left text-left"></div>
-        <div class="keys_item col-12 col-sm-3"> 
+        <div class="row justify-content-left text-left">
+        <div class="keys_item col-6 col-sm-3"> 
             <h4> Client: </h4>
             <p>Компания</p>
             <h4> WEBSITE: </h4>
@@ -151,16 +173,56 @@
             <button type="submit">Visit live site</button>
             </form> 
         </div>
-        <div class="col-12 col-sm-7 offset-0 offset-sm-2 offset-xl-1">
+        <div class="col-6 col-sm-7 offset-0 offset-sm-2 offset-xl-1">
         <div class="keys_item1"> 
             <h4> Название проекта </h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores voluptatem molestiae ab! Veritatis eos, doloribus beatae neque reiciendis. Perspiciatis praesentium, ipsa esse nisi magni distinctio nemo ex, inventore quod nihil vero iure!</p>
         </div></div>
+    </div></div>
+    <div class="carousel-item">
+        <div class="keys_img">
+            <a class="image-popup-no-margins" href="img/primercasetest1.png">
+	            <img src="img/primercasetest1.png" img class="img-fluid d-block mx-auto" >
+            </a>
+        </div>
+        <div class="row justify-content-left text-left">
+        <div class="keys_item col-6 col-sm-3"> 
+            <h4> Client: </h4>
+            <p>Компания</p>
+            <h4> WEBSITE: </h4>
+            <p>http://www.yandex.ru</p>
+            
+            <form action="https://www.yandex.ru">
+            <button type="submit">Visit live site</button>
+            </form> 
+        </div>
+        <div class="col-6 col-sm-7 offset-0 offset-sm-2 offset-xl-1">
+        <div class="keys_item1"> 
+            <h4> Название проекта </h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores voluptatem molestiae ab! Veritatis eos, doloribus beatae neque reiciendis. Perspiciatis praesentium, ipsa esse nisi magni distinctio nemo ex, inventore quod nihil vero iure!</p>
+        </div></div>
+    </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Предыдущий</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Следующий</span>
+  </button>
+</div> 
+          
+
+
+        
+        
         </div>
         </div>
     </section>
        
-    <section class="calculating">
+    <section class="calculating section" id="calculating">
         <div class="calculating_container container border shadow-lg">
         <div class="row justify-content-center">
         <h2>Расчёт стоимости</h2>
@@ -168,25 +230,25 @@
         
         <div class="calculator_inner col-10 col-md-9 justify-content-center text-left ">
         <p>ТИП САЙТА</p>
-        <select class="myselect" name="list1" id="typeSite">
-            <option value="1" selected disabled>Выберите пункт</option>
-            <option value="2">Сайт-визитка</option>
-            <option value="3">Корпоративный сайт</option>
-            <option value="4">Интернет-магазин</option>    
+        <select id="select1" class="myselect" name="list1" id="typeSite">
+            <option value="0" days="0" selected disabled>Выберите пункт</option>
+            <option value="1000" days="1">Сайт-визитка</option>
+            <option value="3000" days="2">Корпоративный сайт</option>
+            <option value="5000" days="3">Интернет-магазин</option>    
         </select>
         <p>ДИЗАЙН</p>
-        <select class="myselect" name="list" id="typeSite">
-            <option value="1" selected disabled>Выберите пункт</option>
-            <option value="3">Шаблонный</option>
-            <option value="3">Уникальный</option>
-            <option value="4">WOW-Дизайн</option> 
+        <select id="select2" class="myselect" name="list" id="typeSite">
+            <option value="0" days="0" selected disabled>Выберите пункт</option>
+            <option value="2000" days="3">Шаблонный</option>
+            <option value="4000" days="2">Уникальный</option>
+            <option value="6000" days="4">WOW-Дизайн</option> 
         </select>
         <p>АДАПТИВНОСТЬ</p>
-        <select class="myselect" name="list" id="typeSite">
-            <option value="1" selected disabled>Выберите пункт</option>
-            <option value="2">Только ПК</option>
-            <option value="3">Только мобильный сайт</option>
-            <option value="4">ПК + Мобильный</option>
+        <select id="select3"  class="myselect" name="list" id="typeSite">
+            <option value="0" days="0" selected disabled>Выберите пункт</option>
+            <option value="1000" days="1">Только ПК</option>
+            <option value="2000" days="5">Только мобильный сайт</option>
+            <option value="5000" days="6">ПК + Мобильный</option>
         </select>
         </div> 
   
@@ -239,21 +301,47 @@
         </div>
     </section>
     
-    <section class="reviews">
+    <section class="reviews section" id="reviews">
         <div class="reviews_container container">
         <h2>Отзывы</h2>
         <hr>
-        <div class="row justify-content-center text-center">
-        <img class="d-block mx-auto" src="img/review_pic.png" alt="Изображение" >
+        
+                <div class="row  text-center">
+        
+        <div id="carouselExampleCaptions" class="carousel carousel-dark slide d-block w-100" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block mx-auto" src="img/review_pic.png" alt="Изображение" >
         <span>Lorem ipsum dolor sit amet, consectetur.</span>
         <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam!</span>
         <p><b>Некто</b>, заказчик</p>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block mx-auto" src="img/review_pic1.png" alt="Изображение" >
+        <span>Lorem ipsum dolor sit amet, consectetur.</span>
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam!</span>
+        <p><b>Аркадий</b>, заказчик</p>
+            </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Предыдущий</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Следующий</span>
+          </button>
         </div>
         </div>
     </section>
 
  <footer>
-    <section class="my_contacts">
+    <section class="my_contacts section" id="contacts">
         <div class="my_contacts_container container text-center">
         <h2>Мои контакты</h2>
         <hr>
@@ -307,10 +395,14 @@
         <p>Copyright @ Владислав Абиссиан. Design my Web</p>
     </div>
 </footer>
+<script src="js/jquery-3.6.1.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/calc.js"></script>    
-</body>
-   
+<script src="js/calc.js"></script>
+<script src="js/custom.js"></script>    
+<script src="js/popup.js"></script>
+
+
     <script>
       var preloader = document.getElementById('loader');
       window.addEventListener("load", function(){
@@ -320,5 +412,7 @@
         loader.style.visibility= "hidden";  
       });
     </script>
-
+    
+  </body>
+   
 </html>
