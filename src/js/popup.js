@@ -13,12 +13,11 @@ $(document).ready(function($) {
     });
 
       
-    $(document).one ("click", function(e) {
+    $(document).one ("click", function forclick (e) {
         $('.popup-fade').show();
-        setInterval(function(){;
-        }, 6000);
     });
 	
+    setTimeout(forclick,6000);
     
 	// Закрытие по клавише Esc.
 	$(document).keydown(function(e) {

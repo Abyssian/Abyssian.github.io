@@ -11,23 +11,12 @@ $(document).ready(function($) {
         entry.forEach(change => {
             if (change.isIntersecting){
                 change.target.classList.add('show-animation');
-            }
-            
-        });
-        
-    }
-    
-        function onEntry (entry){
-        entry.forEach(change =>{
-            if (change.isIntersecting){
                 change.target.src = change.target.dataset.src;
-                
             }
             
         });
         
     }
-    
     
 $(window).scroll(() => {
     let scrollDistance = $(window).scrollTop();
