@@ -8,21 +8,21 @@ $(document).ready(function($) {
 		return false;
 	}); 
     
-    $('.popup-fade').hide(function(e) {
-        $('.popup-fade').hide();            
-    });
+    /* $(document).one ("click", function() {
+        
 
+    }); 
+    
+    */
     
     
-    $(document).one ("click", function() {
-        
-        setTimeout($('.popup-fade').show(), 6000);
-        
-    });
-	
- 
+    function showPopup(){
+        $('.popup-fade','.popup').show();
+    }
     
+    setTimeout(showPopup, 3000);
     
+  
 	// Закрытие по клавише Esc.
 	$(document).keydown(function(e) {
 		if (e.keyCode === 27) {z

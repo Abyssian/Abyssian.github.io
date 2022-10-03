@@ -343,7 +343,8 @@ main{
         }
 
 .popup-fade:before {
-	content: '';
+	display:none;
+    content: '';
 	background: #000;
 	position: fixed; 
 	left: 0;
@@ -355,7 +356,8 @@ main{
 }
  
 .popup {
-	position: fixed;
+	display:none;
+    position: fixed;
 	top: 20%;
 	left: 50%;
 	padding: 20px;
@@ -367,11 +369,16 @@ main{
 	z-index: 333;
 	opacity: 1;	
 }
+
+
+
+
 .popup-close {
 	position: absolute;
 	top: 10px;
 	right: 10px;
 }
+
 
 
 .skills{
