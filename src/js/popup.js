@@ -17,10 +17,10 @@ $(document).ready(function($) {
     
     
     function showPopup(){
-        $('.popup-fade','.popup').show();
+        $(".popup-fade .popup").show();
     }
     
-    setTimeout(showPopup, 3000);
+    setTimeout(showPopup, 6000);
     
   
 	// Закрытие по клавише Esc.
@@ -58,3 +58,5 @@ $(document).ready(function() {
 	});
 
 });
+
+
