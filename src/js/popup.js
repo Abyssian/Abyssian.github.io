@@ -12,16 +12,20 @@ $(document).ready(function($) {
         $('.popup-fade').hide();            
     });
 
-      
-    $(document).one ("click", function forclick (e) {
-        $('.popup-fade').show();
+    
+    
+    $(document).one ("click", function() {
+        
+        setTimeout($('.popup-fade').show(), 6000);
+        
     });
 	
-    setTimeout(forclick,6000);
+ 
+    
     
 	// Закрытие по клавише Esc.
 	$(document).keydown(function(e) {
-		if (e.keyCode === 27) {
+		if (e.keyCode === 27) {z
 			e.stopPropagation();
 			$('.popup-fade').fadeOut();
 		}
