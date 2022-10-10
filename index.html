@@ -8,9 +8,19 @@
     <meta property="og:title" content="Это моя первая страница">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Владислав Абиссиан - Веб-разработчик</title>
-    
+  
+    <script>
+      var preloader = document.getElementById('loader');
+      window.addEventListener("load", function(){
+        loader.style.height= "100px";  
+        loader.style.width= "100px"; 
+        loader.style.borderRadius= "50%";  
+        loader.style.visibility= "hidden";  
+      });
+    </script>
+  
 <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
+<script async type="text/javascript" >
    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
    m[i].l=1*new Date();
    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
@@ -93,7 +103,7 @@
     <main>
     <section class="main">
        <div class="container h-100"><div class="row align-items-center h-100"><div class="col-lg-6 mt-5 pt-5">        
-            <div class="title_container mt-5">
+            <div class="title_container mt-5 element-animation wow animate__animated animate__slideInLeft" data-wow-delay="0.2s">
             <h1>Привет <br>Я Владислав Абиссиан</h1>
             <h4><i class="fa fa-sitemap"></i>Фулл стек веб-разработчик</h4>
             <input type="button" onclick="ym(90714901,'reachGoal','keys'); return true;" value="Обо мне">
@@ -112,7 +122,7 @@
         <div class="row justify-content-center">
             <div class="element-animation col-12 col-sm-6 col-md-3 text-center">
                 <h2>Обо мне</h2>
-                <hr> 
+                <hr>                                    
             </div>
         </div>
 
@@ -205,7 +215,7 @@
     <div class="carousel-item">
         <div class="keys_img">
             <a class="image-popup-no-margins" href="img/primercasetest1.png">
-	            <img src="img/primercasetest1.png" alt="" class="img-fluid d-block mx-auto" >
+	            <img src="img/primercasetest1.png" alt="" class="img-fluid d-block mx-auto">
             </a>
         </div>
         <div class="row justify-content-left text-left">
@@ -440,7 +450,10 @@
     <p> +7 999 999 99 99</p>
     </div>
       <div class="map_yandex col-12 col-md-6">
-          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aefe489ae0965e730ccdc13ca85bdb68216871dd732ac1979966412ce6d488fc7&amp;width=100%25&amp;height=435&amp;lang=ru_RU&amp;scroll=false"></script>
+          <iframe width="640" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=640&amp;height=500&amp;hl=en&amp;q=%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%BE%D0%B5%20%D1%88%D0%BE%D1%81%D1%81%D0%B5,%2039%D0%90%20%D1%813%20Moscow+()&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href='https://maps-generator.com/'></a>
+
+
+
       </div>      
  </div>
         </div>
@@ -460,18 +473,7 @@
 <script src="js/calc.js"></script>
 <script src="js/custom.js"></script>    
 <script src="js/popup.js"></script>
-
-
-    <script>
-      var preloader = document.getElementById('loader');
-      window.addEventListener("load", function(){
-        loader.style.height= "100px";  
-        loader.style.width= "100px"; 
-        loader.style.borderRadius= "50%";  
-        loader.style.visibility= "hidden";  
-      });
-    </script>
-    
+  
   </body>
    
 </html>

@@ -161,25 +161,10 @@ main{
     color: #2c384a;
     text-align: center;
     width: 100%;
-    opacity: 0;
-    -webkit-animation: title_move 1s ease forwards;
-    -o-animation: title_move 1s ease forwards;
-    animation: title_move 1s ease forwards;
-    -webkit-animation-delay: 1.8s;
-    -o-animation-delay: 1.8s;
-    animation-delay: 1.8s; 
+    
 }
 
-    @keyframes title_move{
-        from{
-            opacity:  0;
-            margin-left: -300px;
-        }
-        to{
-            opacity:  1;
-            margin-left: 0px;
-        }
-    }
+
 
     .title_container h1{
         font-family: Arial, sans-serif;
@@ -450,7 +435,8 @@ main{
 
     .img-fluid.{
         max-width: 100%; 
-        height: auto;
+            width: auto;
+            height: auto;
     }
 
 .keys_item{
@@ -521,43 +507,6 @@ main{
 .mfp-no-margins .mfp-container {
 	padding: 0;
 }
-
-
-/* 
-
-for zoom animation 
-uncomment this part if you haven't added this code anywhere else
-
-*/
-/*
-
-.mfp-with-zoom .mfp-container,
-.mfp-with-zoom.mfp-bg {
-	opacity: 0;
-	-webkit-backface-visibility: hidden;
-	-webkit-transition: all 0.3s ease-out; 
-	-moz-transition: all 0.3s ease-out; 
-	-o-transition: all 0.3s ease-out; 
-	transition: all 0.3s ease-out;
-}
-
-.mfp-with-zoom.mfp-ready .mfp-container {
-		opacity: 1;
-}
-.mfp-with-zoom.mfp-ready.mfp-bg {
-		opacity: 0.8;
-}
-
-.mfp-with-zoom.mfp-removing .mfp-container, 
-.mfp-with-zoom.mfp-removing.mfp-bg {
-	opacity: 0;
-}
-*/
-
-
-
-
-
 
 .calculating{
     margin: 52px 0px 0px  0px;
@@ -765,6 +714,8 @@ uncomment this part if you haven't added this code anywhere else
 .education{
     background: url(../img/education_bg.jpg) center/cover no-repeat;
     background-attachment: fixed;
+    width: auto;
+    height: auto;
 }
 
     .education_container{
@@ -815,6 +766,8 @@ uncomment this part if you haven't added this code anywhere else
 
         .education img{
             opacity: 0.8;
+            width: auto;
+            height: auto;
         }
 
         .education button:hover{
@@ -827,27 +780,6 @@ uncomment this part if you haven't added this code anywhere else
             transform: scale(1.1);
         }
 
-
-.footer{   
-    opacity: 0;
-    -webkit-animation: footer_move 1s ease forwards;
-    -o-animation: footer_move 1s ease forwards;
-    animation: footer_move 1s ease forwards;
-    -webkit-animation-delay: 2s;
-    -o-animation-delay: 2s;
-    animation-delay: 2s;
-    }
-
-        @keyframes footer_move{
-            from{
-                opacity:  0;
-                margin-left: -300px;
-            }
-            to{
-                opacity:  1;
-                margin-left: 0px;
-            }
-        }
 
 .my_contacts{
     background: url(../img/my_contacts_bg.jpg) center/cover no-repeat;
